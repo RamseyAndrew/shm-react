@@ -1,6 +1,6 @@
 function ComponentE() {
   return (
-    <div>
+    <div className="border-container">
       <Card text1="+254" text2="Some text" />
       <Card text1="+254" text2="Some text" />
     </div>

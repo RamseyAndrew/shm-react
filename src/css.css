@@ -1,0 +1,9 @@
+.border-container {
+  border: 2px solid #16a085;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+  padding: 16px;
+}
+.border-container:hover {
+  box-shadow: 0 0 10px #16a085, 0 0 20px #16a085;
+}

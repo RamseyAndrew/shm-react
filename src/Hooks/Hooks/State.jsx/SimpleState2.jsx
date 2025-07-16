@@ -1,3 +1,5 @@
+import {useState} from "react"
+
 function SimpleState2(){
     const [currentState, setCurrentState] =useState[0]
 
@@ -19,5 +21,5 @@ function SimpleState2(){
     )
 }
 
-import {useState} from "react"
+
 export default SimpleState2;

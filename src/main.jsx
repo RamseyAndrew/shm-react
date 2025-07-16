@@ -7,8 +7,17 @@ import PrimitiveData from "./Props/PrimitiveData";
 
 import MiniProject from "./MiniProject";
 
+import "./css.css";
+
+import Buttons from "./Events/Btns";
+import Form from "./Events/Form"
+
+import SimpleState from "./Hooks/State/SimpleState";
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <MiniProject />
+    <SimpleState/>
   </StrictMode>
 );

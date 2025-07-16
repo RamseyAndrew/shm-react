@@ -1,9 +1,28 @@
 .border-container {
-  border: 2px solid #16a085;
-  border-radius: 8px;
-  transition: box-shadow 0.3s;
+  border: 3px solid transparent;
+  border-radius: 50px;
   padding: 16px;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
+
 .border-container:hover {
-  box-shadow: 0 0 10px #16a085, 0 0 20px #16a085;
+  box-shadow: 0 0 20px #16a085, 0 0 40px #4A90E2;
+}
+.component-D{
+    border: 5px solid #031b16;
+  border-radius: 50px;
+  transition: box-shadow 0.3s;
+  padding: 20px 20px 20px 20px;
+  background-color: #fff;
+  max-width: 700px;
+}
+.component-D:hover{
+    box-shadow: 0 0 10px #16a085, 0 0 20px #16a085;
+}
+.myblog{
+    display: flex;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    object-fit: contain;
+    text-align: center;
 }

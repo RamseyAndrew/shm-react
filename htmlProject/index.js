@@ -30,3 +30,10 @@ numbers = [2, 6, 7, 8, 10];
 let numbersSqt = numbers.map((n) => {
   return n * n;
 });
+
+function myState(val) {
+function areCircle(r) {
+  return 3.142*r*r;
+}
+return[val, areCircle]
+}

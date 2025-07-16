@@ -13,11 +13,12 @@ import Buttons from "./Events/Btns";
 import Form from "./Events/Form"
 
 import SimpleState from "./Hooks/State/SimpleState";
+import SimpleState2 from "./Hooks/State/SimpleState2";
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MiniProject />
     <SimpleState/>
+    <SimpleState2/>
   </StrictMode>
 );

@@ -12,8 +12,8 @@ import "./css.css";
 import Buttons from "./Events/Btns";
 import Form from "./Events/Form"
 
-import SimpleState from "./Hooks/State/SimpleState";
-import SimpleState2 from "./Hooks/State/SimpleState2";
+import SimpleState from "./Hooks/Hooks/State.jsx/SimpleState";
+import SimpleState2 from "./Hooks/Hooks/State.jsx/SimpleState2";
 
 
 createRoot(document.getElementById("root")).render(

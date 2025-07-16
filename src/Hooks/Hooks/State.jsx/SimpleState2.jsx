@@ -5,17 +5,19 @@ function SimpleState2(){
      setCurrentState(currentState + 1);
     }
     const decrement =() => {
-        setCurrentState(currentState -1);
+         let newState =currentState -1;
+         setCurrentState(newState)
     };
   
      return(
         <div>
             <h1>SimpleState2</h1>
-            <button>-</button>
+            <button onClick ={decrement}>-</button>
             <span>{currentState}</span>
             <button onClick={increment}>+</button>
         </div>
     )
 }
 
+import {useState} from "react"
 export default SimpleState2;

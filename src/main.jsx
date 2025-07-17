@@ -9,16 +9,19 @@ import MiniProject from "./MiniProject";
 
 import "./css.css";
 
-import Buttons from "./Events/Btns";
-import Form from "./Events/Form"
+import Buttons from "./Hooks/Events/Btns";
+import Form from "./Hooks/Events/Form"
 
-import SimpleState from "./Hooks/Hooks/State.jsx/SimpleState";
-import SimpleState2 from "./Hooks/Hooks/State.jsx/SimpleState2";
-
+import SimpleState from "./Hooks/State/SimpleState";
+import SimpleState2 from "./Hooks/State/SimpleState2";
+import FormState from "./Hooks/State/FormState";
+import  SimpleEffect  from "./Effects/Effects"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <SimpleState/>
     <SimpleState2/>
+  <FormState/>
+  <SimpleEffect/>
   </StrictMode>
 );

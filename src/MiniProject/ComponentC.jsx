@@ -1,10 +1,10 @@
 import ComponentE from "./ComponentE";
-import ComponetD from "./ComponentD";
+import ComponentD from "./ComponentD";
 
 function ComponentC() {
   return (
     <div className="border-container">
-      <ComponetD />
+      <ComponentD />
       <ComponentE />
     </div>
   );

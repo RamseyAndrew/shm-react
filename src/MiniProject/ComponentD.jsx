@@ -1,4 +1,4 @@
-function ComponetD() {
+function ComponentD() {
   return (
     <div>
       <div className="component-D">
@@ -10,4 +10,4 @@ function ComponetD() {
   );
 }
 
-export default ComponetD;
+export default ComponentD;

@@ -1,7 +1,6 @@
-import {useState} from "react"
 
 function SimpleState2(){
-    const [currentState, setCurrentState] =useState[0]
+    const [currentState, setCurrentState] =useState(0)
 
     const increment = () => {
      setCurrentState(currentState + 1);
@@ -23,3 +22,4 @@ function SimpleState2(){
 
 
 export default SimpleState2;
+import {useState} from "react"

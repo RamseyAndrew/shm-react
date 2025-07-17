@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import  chicken  from "./src/Effects/chicken.jpeg"
+import chicken from "./chicken.jpeg"
 
 function SimpleEffect() {
   // useEffect(function,[dependency])

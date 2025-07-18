@@ -18,8 +18,15 @@ import SimpleState2 from "./Hooks/State/SimpleState2";
 import FormState from "./Hooks/State/FormState";
 import  SimpleEffect  from "./Effects/Effects"
 import Navigation from "./Routing/ManualRoutes/Navigation";
+import About from "./Routing/ManualRoutes/ABout";
+import Contact from "./Routing/ManualRoutes/Contact";
+import Home from "./Routing/ManualRoutes/Home";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
   <Navigation/>
+  <Home/>
+  <About/>
+  <Contact/>
+  </StrictMode>
   </StrictMode>
 );

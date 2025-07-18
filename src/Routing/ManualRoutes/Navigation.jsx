@@ -1,8 +1,8 @@
 function Navigation(){
-    return(  <div style={{ display: "flex", flexDirection: "column", width: "50px" }}>
-        <div style={{ margin: "10px", width: "100%" }}>Home</div>
-        <div style={{ margin: "10px", width: "100%" }}>About</div>
-        <div style={{ margin: "10px", width: "100%" }}>Contanct</div>
+    return( <div style={{ display: "flex", flexDirection: "column", width: "100px" }}>
+        <button className="btn btn-primary m-1">Home</button>
+        <button className="btn btn-primary m-1">About</button>
+        <button className="btn btn-primary m-1">Contact</button>
       </div>
     );
   }

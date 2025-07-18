@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -26,5 +27,3 @@
   },
   "packageManager": "yarn@4.3.1+sha512.af78262d7d125afbfeed740602ace8c5e4405cd7f4735c08feb327286b2fdb2390fbca01589bfd1f50b1240548b74806767f5a063c94b67e431aabd0d86f7774"
 }
-
-

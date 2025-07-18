@@ -7,7 +7,8 @@ import PrimitiveData from "./Props/PrimitiveData";
 
 import MiniProject from "./MiniProject";
 
-import "./css.css";
+//import "./css.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Buttons from "./Hooks/Events/Btns";
 import Form from "./Hooks/Events/Form"
@@ -19,10 +20,6 @@ import  SimpleEffect  from "./Effects/Effects"
 import Navigation from "./Routing/ManualRoutes/Navigation";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <SimpleState/>
-    <SimpleState2/>
-  <FormState/>
-  <SimpleEffect/>
   <Navigation/>
   </StrictMode>
 );

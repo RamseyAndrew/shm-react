@@ -21,12 +21,11 @@ import Navigation from "./Routing/ManualRoutes/Navigation";
 import About from "./Routing/ManualRoutes/ABout";
 import Contact from "./Routing/ManualRoutes/Contact";
 import Home from "./Routing/ManualRoutes/Home";
+import ManualRoute from "./Routing/ManualRoutes";
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <Navigation/>
-  <Home/>
-  <About/>
-  <Contact/>
-  </StrictMode>
+  <ManualRoute/>
   </StrictMode>
 );

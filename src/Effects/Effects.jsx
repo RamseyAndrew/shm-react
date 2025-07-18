@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import chicken from "./chicken.jpeg"
+import chickenimg from "./chicken.jpeg";
 
 function SimpleEffect() {
   // useEffect(function,[dependency])
@@ -13,7 +13,36 @@ function SimpleEffect() {
   const [n, setN] = useState(0);
   const [showForm, setShowForm] = useState(false);
 
-  const [chickens, setChickens] = useState([1, 2, 3, 4, 5]);
+  const [chickens, setChickens] = useState([]);
+
+  const [d, setD] = useState("");
+
+  useEffect(() => {
+    let date = new Date();
+    // bug memmory leak
+    //
+    setTimeout(() => {
+      setD(date.toISOString());
+    }, 100);
+  }, []);
+
+  // OK
+  useEffect(() => {
+    console.log("Useffec has run");
+    // setN(somehting)
+    // 1 chicken is equal to 5
+    let k = n / 5; // n10/5 > 2
+    k = Math.floor(k); // 2,4
+
+    let chickenArr = [];
+    for (let i = 0; i < k; i++) {
+      chickenArr.push(i + 1);
+    }
+    console.log(chickenArr);
+    setChickens(chickenArr);
+  }, [n]);
+
+
 
   const getStatus = () => {
     if (showForm === true) {
@@ -40,39 +69,22 @@ function SimpleEffect() {
   return (
     <div>
       <h1>Simple Effect</h1>
+      <div>TS:{d}</div>
+      <button onClick={() => setN(n - 1)}>-</button>
+      <span>{n}</span>
+      <button onClick={() => setN(n + 1)}>+</button>
       <div>
-        <button
-          onClick={() => {
-            setN(n - 1);
-          }}
-        >
-          -
-        </button>
-        <span>{n}</span>
-        <button
-          onClick={() => {
-            setN(n + 1);
-          }}
-        >
-          +
-        </button>
+        {chickens.map((chicken, index) => (
+          <img
+            src={chickenimg}
+            key={index}
+            style={{
+              width: "50px",
+              margin: "10px",
+            }}
+          />
+        ))}
       </div>
-
-      <div>
-        {chickens.map((chicken, index) => {
-          return (
-            <img
-              src={chicken}
-              key={index}
-              style={{
-                width: "50px",
-                margin: "10px",
-              }}
-            />
-          );
-        })}
-      </div>
-
       <button onClick={() => setShowForm(!showForm)}>{getStatus()}</button>
       <MyForm showForm={showForm} />
     </div>

@@ -22,10 +22,12 @@ import About from "./Routing/ManualRoutes/ABout";
 import Contact from "./Routing/ManualRoutes/Contact";
 import Home from "./Routing/ManualRoutes/Home";
 import ManualRoute from "./Routing/ManualRoutes";
-
+import Dashboard from "./Routing/ReactRouter/DashBoard";
+import Login from "./Routing/ReactRouter/Login";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <ManualRoute/>
+  {/* <login/>*/}
+  <Dashboard/>
   </StrictMode>
 );

@@ -2,7 +2,7 @@ function Contact(props){
 
     const {page} = props
  if (page !== "contact"){
-    return null
+    return null;
  }
 
     return(

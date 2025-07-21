@@ -24,10 +24,9 @@ import Home from "./Routing/ManualRoutes/Home";
 import ManualRoute from "./Routing/ManualRoutes";
 import Dashboard from "./Routing/ReactRouter/DashBoard";
 import Login from "./Routing/ReactRouter/Login";
-
+import ReactRouter from "./Routing/ReactRouter";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-  {/* <login/>*/}
-  <Dashboard/>
+  <ReactRouter/>
   </StrictMode>
 );

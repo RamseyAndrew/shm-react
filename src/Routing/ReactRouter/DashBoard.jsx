@@ -1,6 +1,6 @@
 import Search from "./Search";
 
-import Login from "./Login";
+import All from "./All";
 
 import NavComponent from "./NavComponent";
 
@@ -10,7 +10,7 @@ function Dashboard() {
       <h1>Dashboard Page</h1>
       <NavComponent />
       <Search />
-      <Login />
+      <All />
     </div>
   );
 }
